@@ -52,6 +52,11 @@ public class ItemCalculate {
         amount += 1;
         System.out.println(amount);
 
+        price = 110;
+        amount = 3;
+        price -= 10;
+        price *= amount;
+        System.out.println(price);
     }
 
 }
