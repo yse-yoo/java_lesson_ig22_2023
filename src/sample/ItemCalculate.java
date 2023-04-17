@@ -74,6 +74,37 @@ public class ItemCalculate {
         long amount2 = 100000;
         long totalPrice2 = price2 * amount2;
         System.out.println(totalPrice2);
+
+        //論理演算(Logical calculation)
+        boolean is_match = false;
+        price = 150;
+
+        // is equal?
+        is_match = (price == 100);
+        System.out.println(is_match);
+
+        is_match = (price < 100);
+        System.out.println(is_match);
+
+        is_match = (price <= 100);
+        System.out.println(is_match);
+
+        is_match = (price > 100);
+        System.out.println(is_match);
+
+        is_match = (price >= 100);
+        System.out.println(is_match);
+
+        is_match = (price != 100);
+        System.out.println(is_match);
+
+        int price3 = 100;
+        String price4 = "100";
+        // complile error
+        // is_match = (price3 == price4);
+
+        is_match = (price3 == Integer.parseInt(price4));
+        System.out.println(is_match);
     }
 
 }
