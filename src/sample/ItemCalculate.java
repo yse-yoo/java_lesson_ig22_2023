@@ -1,17 +1,17 @@
 package sample;
 
 public class ItemCalculate {
-    
+
     public static void main(String[] args) {
         String name = "コーヒー";
         int price = 100;
         int amount = 5;
         boolean isSale = true;
 
-        //snake
+        // snake
         int total_price = price * amount;
 
-        //camel
+        // camel
         int totalPrice = price * amount;
 
         System.out.println(name);
@@ -22,11 +22,10 @@ public class ItemCalculate {
         // Complie Error
         // total_price = name * amount;
 
-        //消費税（comsuption tax）
+        // 消費税（comsuption tax）
         // final float TAX_RATE = 0.1f;
         final Float TAX_RATE = 0.1f;
         // TAX_RATE = 0.8f;
-
 
         price = 200;
         float pointRate = 0.05f;
@@ -34,20 +33,20 @@ public class ItemCalculate {
         System.out.println("ポイント：" + point + "pt");
 
         amount = 5;
-        //increment
+        // increment
         amount++;
         System.out.println(amount);
 
-        //decrement
+        // decrement
         amount--;
         System.out.println(amount);
 
-        //(1) 2項演算
+        // (1) 2項演算
         amount = 3;
         amount = amount + 1;
         System.out.println(amount);
 
-        //(2) 複合演算
+        // (2) 複合演算
         amount = 3;
         amount += 1;
         System.out.println(amount);
@@ -55,15 +54,15 @@ public class ItemCalculate {
         price = 110;
         amount = 3;
 
-        //price = price - 10;
+        // price = price - 10;
         price -= 10;
 
-        //price = price * amount;
+        // price = price * amount;
         price *= amount;
 
         System.out.println(price);
 
-        //オーバーフロー（over flow）
+        // オーバーフロー（over flow）
         price = 100000;
         amount = 100000;
 
@@ -75,7 +74,7 @@ public class ItemCalculate {
         long totalPrice2 = price2 * amount2;
         System.out.println(totalPrice2);
 
-        //論理演算(Logical calculation)
+        // 論理演算(Logical calculation)
         boolean is_match = false;
         price = 150;
 
@@ -105,6 +104,16 @@ public class ItemCalculate {
 
         is_match = (price3 == Integer.parseInt(price4));
         System.out.println(is_match);
+
+        String character_name = "Tokyo";
+        String monster_name = "スライム";
+        int character_hp = 20;
+        int monster_hp = 5;
+        int damage = 10;
+        String battle_message = character_name + "のこうげき！";
+        String attack_message = (monster_hp > damage) ? "に" + damage + "のダメージ" : "はたおれた！";
+        battle_message += monster_name + attack_message;
+        System.out.println(battle_message);
     }
 
 }
