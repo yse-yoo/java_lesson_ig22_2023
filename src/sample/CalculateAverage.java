@@ -9,7 +9,7 @@ public class CalculateAverage {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Input score of Japanese!");
-        int japnese = sc.nextInt();
+        int japanese = sc.nextInt();
 
         System.out.println("Input score of Mathmatic!");
         int mathmatic = sc.nextInt();
@@ -20,7 +20,7 @@ public class CalculateAverage {
         System.out.println("Input score of Society!");
         int society = sc.nextInt();
 
-        float average = (japnese + mathmatic + science + society) / 4.0f;
+        float average = (japanese + mathmatic + science + society) / 4.0f;
         String message = "Score average is " + average;
         System.err.println(message);
     }
