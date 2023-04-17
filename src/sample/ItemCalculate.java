@@ -32,6 +32,29 @@ public class ItemCalculate {
         float pointRate = 0.05f;
         float point = price * pointRate;
         System.out.println("ポイント：" + point + "pt");
+
+        amount = 5;
+        amount++;
+        System.out.println(amount);
+        amount--;
+        System.out.println(amount);
+
+        amount = 10;
+        System.out.println(amount++ + amount++);
+
+        amount = 10;
+        System.out.println(++amount + ++amount);
+
+        //(1) 2項演算
+        amount = 3;
+        amount = amount + 1;
+        System.out.println(amount);
+
+        //(2) 複合演算
+        amount = 3;
+        amount += 1;
+        System.out.println(amount);
+
     }
 
 }
