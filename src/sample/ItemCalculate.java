@@ -22,6 +22,16 @@ public class ItemCalculate {
         // Complie Error
         // total_price = name * amount;
 
+        //消費税（comsuption tax）
+        // final float TAX_RATE = 0.1f;
+        final Float TAX_RATE = 0.1f;
+        // TAX_RATE = 0.8f;
+
+
+        price = 200;
+        float pointRate = 0.05f;
+        float point = price * pointRate;
+        System.out.println("ポイント：" + point + "pt");
     }
 
 }
