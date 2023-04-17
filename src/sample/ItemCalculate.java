@@ -34,16 +34,13 @@ public class ItemCalculate {
         System.out.println("ポイント：" + point + "pt");
 
         amount = 5;
+        //increment
         amount++;
         System.out.println(amount);
+
+        //decrement
         amount--;
         System.out.println(amount);
-
-        amount = 10;
-        System.out.println(amount++ + amount++);
-
-        amount = 10;
-        System.out.println(++amount + ++amount);
 
         //(1) 2項演算
         amount = 3;
