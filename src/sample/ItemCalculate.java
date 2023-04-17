@@ -54,9 +54,26 @@ public class ItemCalculate {
 
         price = 110;
         amount = 3;
+
+        //price = price - 10;
         price -= 10;
+
+        //price = price * amount;
         price *= amount;
+
         System.out.println(price);
+
+        //オーバーフロー（over flow）
+        price = 100000;
+        amount = 100000;
+
+        totalPrice = price * amount;
+        System.out.println(totalPrice);
+
+        long price2 = 100000;
+        long amount2 = 100000;
+        long totalPrice2 = price2 * amount2;
+        System.out.println(totalPrice2);
     }
 
 }
