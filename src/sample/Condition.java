@@ -9,8 +9,9 @@ public class Condition {
 
         if (money > price) {
             message = "お買い上げありがとうございました。";
+        } else {
+            message = "お金がたりません。";
         }
-
         System.out.println(message);
     }
 
