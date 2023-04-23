@@ -3,8 +3,8 @@ package sample;
 public class Condition {
     
     public static void main(String[] args) {
-        int price = -200;
-        int money = 100;        
+        int price = 400;
+        int money = 500;        
         String message = "";
 
         if (price < 0) {
