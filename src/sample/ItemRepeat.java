@@ -36,6 +36,12 @@ public class ItemRepeat {
             System.out.println(drink);
         }
 
+        // while
+        int i = 0;
+        while (i <= 10) {
+            i++;
+        }
+        System.out.println(i);
     }
 
 }
