@@ -45,7 +45,7 @@ public class Condition {
         // 問題1
         int age = 18; 
         boolean isBlackList = false;
-        boolean hasBankAccounts = false;
+        boolean hasBankAccounts = true;
         message = "クレジットカードを作成できません";
 
         // ブラックリストにはない and 18才以上 and 65才未満
