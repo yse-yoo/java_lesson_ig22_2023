@@ -41,6 +41,23 @@ public class Condition {
                 break;
         }
         System.out.println(garbage);
+
+        // 問題1
+        int age = 18; 
+        boolean isBlackList = false;
+        boolean hasBankAccounts = false;
+        message = "クレジットカードを作成できません";
+
+        // ブラックリストにはない and 18才以上 and 65才未満
+        if (!isBlackList && age >= 18 && age < 65) {
+            // 銀行口座を持っているか？
+            if (hasBankAccounts) {
+                message = "クレジットカードを作成できます";
+            } else {
+                message = "審査が必要です";
+            }
+        }
+        System.out.println(message);
     }
 
 }
