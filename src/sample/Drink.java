@@ -21,5 +21,11 @@ public class Drink {
         // index = 1 のデータを更新
         drinks[1] = "ウーロン茶";
         System.out.println(Arrays.toString(drinks));
+
+        // prices(int型、Integer型)の配列
+        Integer[] prices = { 350, 400, 300 };
+        System.out.println(Arrays.toString(prices));
+        Integer selectPrice = prices[1];
+        System.out.println(selectPrice);
     }
 }
