@@ -3,8 +3,6 @@ package sample;
 import java.util.Random;
 import java.util.Scanner;
 
-import javax.print.attribute.standard.Sides;
-
 public class RSPGame {
     
     public static void main(String[] args) {
