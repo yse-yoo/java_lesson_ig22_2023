@@ -19,8 +19,10 @@ public class ItemRepeat {
         for (int i = 1; i <= 10; i++) {
             for (int j = 1; j <= 10; j++) {
                 String plot = "(" + i + ", " + j + ")";
-                System.out.println(plot);
+                System.out.print(plot);
             }
+
+            System.out.println("");
         }
     }
 
