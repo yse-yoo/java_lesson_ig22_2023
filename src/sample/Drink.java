@@ -13,5 +13,9 @@ public class Drink {
 
         System.out.println(drinks);
         System.out.println(Arrays.toString(drinks));
+
+        // index = 1 のデータ
+        String selectDrink = drinks[1];
+        System.out.println(selectDrink);
     }
 }
