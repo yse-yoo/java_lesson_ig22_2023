@@ -42,6 +42,24 @@ public class ItemRepeat {
             i++;
         }
         System.out.println(i);
+
+        int currentNumber = 1;
+        int maxNumber = 1000;
+        int div = 7;
+        int index = 0;
+        int limit = 5;
+
+        //現在の数字が、最大の数字より小さいときは、ずっとくりかえす。
+        while (currentNumber < maxNumber) {
+            if (currentNumber % div == 0) {
+                System.out.println(currentNumber);
+                index++;
+            }
+            if (index == limit) {
+                break;
+            }
+            currentNumber++;
+        }
     }
 
 }
