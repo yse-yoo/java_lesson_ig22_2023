@@ -25,10 +25,17 @@ public class ItemRepeat {
             System.out.println("");
         }
 
+        // fori: repeat array
         String[] drinks = { "コーヒー", "紅茶", "ほうじ茶" };
         for (int i = 0; i < drinks.length; i++) {
             System.out.println(drinks[i]);
         }
+
+        // foreach: repeat array
+        for (String drink : drinks) {
+            System.out.println(drink);
+        }
+
     }
 
 }
