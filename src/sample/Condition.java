@@ -23,9 +23,10 @@ public class Condition {
 
         switch (weekday) {
             case "月":
+            case "金":
                 garbage = "燃えるゴミ";    
                 break;
-            case "金":
+            case "水":
                 garbage = "燃えないゴミ";    
                 break;
             default:
