@@ -32,8 +32,13 @@ public class RSPGame {
         } else {
             message = "Playerの勝ち";
         }
-        System.err.println("Plyer:" + playerHand);
-        System.err.println("PC:" + pcHand);
+
+        String[] hands = { "グー", "チョキ", "パー" };
+        String playerHandLabel = hands[playerHand];
+        String pcHandLabel = hands[pcHand];
+        
+        System.err.println("Plyer:" + playerHandLabel);
+        System.err.println("PC:" + pcHandLabel);
         System.out.println(message);
     }
 
