@@ -1,6 +1,7 @@
 package sample;
 
 import java.util.Random;
+import java.util.Scanner;
 
 import javax.print.attribute.standard.Sides;
 
@@ -8,12 +9,14 @@ public class RSPGame {
     
     public static void main(String[] args) {
         // グー、チョキ、パー
-        final int ROCK = 0;        
-        final int SCISSORS = 1;        
-        final int PAPER = 2;        
+        final int ROCK = 0;
+        final int SCISSORS = 1;
+        final int PAPER = 2;
         
         // Playerの手
-        int playerHand = SCISSORS;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input number: 0:ROCK, 1:SEISSORS, 2:PAPER");
+        int playerHand = scanner.nextInt();
 
         // PCの手(ランダム: 0 - 2)
         Random random = new Random();
@@ -31,6 +34,8 @@ public class RSPGame {
         } else {
             message = "Playerの勝ち";
         }
+        System.err.println("Plyer:" + playerHand);
+        System.err.println("PC:" + pcHand);
         System.out.println(message);
     }
 
