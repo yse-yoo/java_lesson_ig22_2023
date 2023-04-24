@@ -1,5 +1,7 @@
 package sample;
 
+import java.util.Random;
+
 import javax.print.attribute.standard.Sides;
 
 public class RSPGame {
@@ -12,8 +14,10 @@ public class RSPGame {
         
         // Playerの手
         int playerHand = SCISSORS;
-        // PCの手
-        int pcHand = SCISSORS;
+
+        // PCの手(ランダム: 0 - 2)
+        Random random = new Random();
+        int pcHand = random.nextInt(3);
 
         // 対戦結果: 0 = 引き分け(draw）、1 = PCの勝ち 、2 = Playerの勝ち
         int result = (playerHand - pcHand + 3) % 3;
