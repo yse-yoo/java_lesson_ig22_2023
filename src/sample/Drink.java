@@ -40,5 +40,9 @@ public class Drink {
 
         System.out.println(handIndex);
         System.out.println(pcHand);
+
+        String[] foods = { "Apple", "Grape", "Peach" };
+        foods[1] = "Orange";
+        System.out.println(Arrays.toString(foods));
     }
 }
