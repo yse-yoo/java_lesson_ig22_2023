@@ -1,5 +1,7 @@
 package sample;
 
+import java.util.Calendar;
+
 public class Condition {
     
     public static void main(String[] args) {
@@ -18,15 +20,20 @@ public class Condition {
         System.out.println(message);
 
         // switch
-        String weekday = "月";
+        String weekday = "金";
         String garbage = "";
+        // 曜日のindexの取得
+        // 日:1 月:2 火:3 水:4 木:5 金:6 土:7
+        Calendar cal = Calendar.getInstance();
+        int week = cal.get(Calendar.DAY_OF_WEEK);
+        System.out.println(week);
 
-        switch (weekday) {
-            case "月":
-            case "金":
+        switch (week) {
+            case 2:
+            case 6:
                 garbage = "燃えるゴミ";    
                 break;
-            case "水":
+            case 4:
                 garbage = "燃えないゴミ";    
                 break;
             default:
