@@ -24,6 +24,11 @@ public class ItemRepeat {
 
             System.out.println("");
         }
+
+        String[] drinks = { "コーヒー", "紅茶", "ほうじ茶" };
+        for (int i = 0; i < drinks.length; i++) {
+            System.out.println(drinks[i]);
+        }
     }
 
 }
