@@ -28,6 +28,10 @@ public class Condition {
         int week = cal.get(Calendar.DAY_OF_WEEK);
         System.out.println(week);
 
+        String[] weekDays = { "Sun", "Mon", "Tue", "Wed", "Tur", "Fri", "Sat" };
+        String weekDay = weekDays[week - 1];
+        System.out.println(weekDay);
+
         switch (week) {
             case 2:
             case 6:
