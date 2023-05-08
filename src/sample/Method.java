@@ -6,5 +6,9 @@ public class Method {
         
     }
 
-    
+    //static method
+    public static Float calculate(Float x) {
+        Float y = x + 5;
+        return y;
+    }
 }
