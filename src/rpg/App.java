@@ -4,10 +4,20 @@ public class App {
     
     public static void main(String[] args) {
         Character wizard = new Character();
-        System.out.println(wizard);
+        wizard.name = "アリス";
+        wizard.job = "Wizard";
+        wizard.hp = 30;
+        System.out.println(wizard.name);
+        System.out.println(wizard.job);
+        System.out.println(wizard.hp);
 
         Character warrior = new Character();
-        System.out.println(warrior);
+        warrior.name = "ボブ";
+        warrior.job = "Warrior";
+        warrior.hp = 80;
+        System.out.println(warrior.name);
+        System.out.println(warrior.job);
+        System.out.println(warrior.hp);
     }
 
 }
