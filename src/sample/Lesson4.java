@@ -1,5 +1,7 @@
 package sample;
 
+import java.util.Random;
+
 public class Lesson4 {
 
     public static void main(String[] args) {
@@ -37,6 +39,19 @@ public class Lesson4 {
                 System.out.print(answer + " ");
             }
             System.out.println("");
+        }
+
+        // 5 x 5
+        Random rand = new Random();
+        String[] marks = { "1", "2", "3", "4", "5"};
+
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= 5; j++) {
+                int markIndex = rand.nextInt(marks.length);
+                String result = "|" + marks[markIndex];
+                System.out.print(result);
+            }
+            System.out.println("|");
         }
     }
 
