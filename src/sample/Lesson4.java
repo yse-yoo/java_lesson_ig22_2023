@@ -23,6 +23,12 @@ public class Lesson4 {
         //年数
         int year = 0;
 
+        while (deposit < target) {
+            deposit *= (1 + interest);
+            year++;
+        }
+
+        System.out.println(year + "年");
     }
 
 }
