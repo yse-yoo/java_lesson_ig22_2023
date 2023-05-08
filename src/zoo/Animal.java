@@ -14,4 +14,9 @@ public class Animal {
     public void cry() {
         System.out.println(this.crying);
     }
+
+    public void escape() {
+        String message = this.name + "が逃げた";
+        System.out.println(message);
+    }
 }

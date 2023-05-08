@@ -18,6 +18,7 @@ public class AnimalApp {
 
         cat.cry();
         cat.walk();
+        cat.escape();
     }
 
 }
