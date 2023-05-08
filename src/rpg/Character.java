@@ -13,6 +13,7 @@ public class Character {
     //初期化ブロック(Object Initialize Block)
     {
         System.out.println("Initialize");
+        this.level = 1;
     }
 
     // フィールド（プロパティ）
@@ -22,6 +23,8 @@ public class Character {
     String job;
     // 体力
     int hp;
+    // Level
+    int level;
 
     // class method(instnace method)
     // 歩く
