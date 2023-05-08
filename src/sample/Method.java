@@ -5,6 +5,9 @@ public class Method {
     public static void main(String[] args) {
         Float answer = calculate(2.f);
         System.out.println(answer);
+
+        //実行できない
+        // answer = calculate2(answer);
     }
 
     //static method
@@ -18,4 +21,8 @@ public class Method {
         return y;
     }
 
+    public static int claculateTotalPrice(int price, int amount) {
+        int totalPrice = price * amount;
+        return totalPrice;
+    }
 }
