@@ -4,9 +4,15 @@ public class Character {
     
     //コンストラクタ（Constructor）
     public Character(String name, String job) {
+        System.out.println("New Character");
         this.name = name;
         this.job = job;
         this.hp = 50;
+    }
+
+    //初期化ブロック(Object Initialize Block)
+    {
+        System.out.println("Initialize");
     }
 
     // フィールド（プロパティ）
