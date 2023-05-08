@@ -11,6 +11,9 @@ public class Method {
 
         int totalPrice = claculateTotalPrice(200, 5);
         System.out.println(totalPrice + "円");
+
+        greet("YSE");
+        greet("YSE", "雨");
     }
 
     //static method
@@ -29,4 +32,16 @@ public class Method {
         int totalPrice = price * amount;
         return totalPrice;
     }
+
+    // overload
+    public static void greet(String name) {
+       String message = name + "さん、こんにちは！"; 
+       System.out.println(message);
+    }
+
+    public static void greet(String name, String weather) {
+       String message = name + "さん。今日は" + weather + "ですね"; 
+       System.out.println(message);
+    }
+
 }
