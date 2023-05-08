@@ -3,7 +3,8 @@ package sample;
 public class Method {
     
     public static void main(String[] args) {
-        
+        Float answer = calculate(2.f);
+        System.out.println(answer);
     }
 
     //static method
