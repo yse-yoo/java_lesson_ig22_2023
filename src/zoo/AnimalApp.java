@@ -7,6 +7,17 @@ public class AnimalApp {
         dog.type = "dog";
         dog.name = "タロー";
         dog.crying = "わん！";
+
+        dog.walk();
+        dog.cry();
+
+        Animal cat = new Animal();
+        cat.type = "cat";
+        cat.name = "ミケ";
+        cat.crying = "にゃー";
+
+        cat.cry();
+        cat.walk();
     }
 
 }
