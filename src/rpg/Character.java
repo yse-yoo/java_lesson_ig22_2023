@@ -1,6 +1,14 @@
 package rpg;
 
 public class Character {
+    
+    //コンストラクタ（Constructor）
+    public Character(String name, String job) {
+        this.name = name;
+        this.job = job;
+        this.hp = 50;
+    }
+
     // フィールド（プロパティ）
     // 名前
     String name;
