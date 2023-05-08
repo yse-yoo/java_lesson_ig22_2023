@@ -20,6 +20,8 @@ public class App {
         System.out.println(warrior.name);
         System.out.println(warrior.job);
         System.out.println(warrior.hp);
+
+        wizard.talk(warrior, "勝負しましょう！");
     }
 
 }
