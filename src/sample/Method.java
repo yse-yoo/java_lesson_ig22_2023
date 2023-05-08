@@ -12,8 +12,12 @@ public class Method {
         int totalPrice = claculateTotalPrice(200, 5);
         System.out.println(totalPrice + "円");
 
+        totalPrice = claculateTotalPrice(200, 5, 0.1f);
+        System.out.println(totalPrice + "円");
+
         greet("YSE");
         greet("YSE", "雨");
+        greet("東京　太郎");
     }
 
     //static method
@@ -28,12 +32,20 @@ public class Method {
     }
 
     // 合計金額（ごうけいきんがく）の計算
+    // int price, int amount
     public static int claculateTotalPrice(int price, int amount) {
         int totalPrice = price * amount;
         return totalPrice;
     }
 
-    // overload
+    //overload
+    // int price, int amount, float taxRate 
+    public static int claculateTotalPrice(int price, int amount, float taxRate) {
+        float totalPrice = price * amount * (1 + taxRate);
+        return (int) totalPrice;
+    }
+
+
     public static void greet(String name) {
        String message = name + "さん、こんにちは！"; 
        System.out.println(message);
