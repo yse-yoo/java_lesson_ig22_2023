@@ -8,6 +8,9 @@ public class Method {
 
         //実行できない
         // answer = calculate2(answer);
+
+        int totalPrice = claculateTotalPrice(200, 5);
+        System.out.println(totalPrice + "円");
     }
 
     //static method
@@ -21,6 +24,7 @@ public class Method {
         return y;
     }
 
+    // 合計金額（ごうけいきんがく）の計算
     public static int claculateTotalPrice(int price, int amount) {
         int totalPrice = price * amount;
         return totalPrice;
