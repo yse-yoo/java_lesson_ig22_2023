@@ -20,5 +20,10 @@ public class Character {
         message = character.name + "!" + message;
         System.out.println(message);
     }
+    // 攻撃（こうげき）する
+    public void attack(Character character) {
+        int damage = 5;
+        character.hp -= damage;
+    }
 }
 
