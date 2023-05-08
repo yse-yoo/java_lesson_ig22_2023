@@ -12,4 +12,10 @@ public class Method {
         Float y = x + 5;
         return y;
     }
+
+    public Float calculate2(Float x) {
+        Float y = x + 5;
+        return y;
+    }
+
 }
