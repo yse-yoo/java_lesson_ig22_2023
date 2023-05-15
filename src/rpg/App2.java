@@ -6,7 +6,8 @@ public class App2 {
         Wizard wizard = new Wizard("アリス");
         wizard.walk("left");
 
-        System.out.println(wizard.name);
+        Warrior warrior = new Warrior("ボブ");
+        warrior.walk("right");
     }
 
 }
