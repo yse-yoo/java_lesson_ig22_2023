@@ -1,13 +1,16 @@
 package rpg;
 
 public class Character {
+    //初期化ブロック(Object Initialize Block)
+    {
+        System.out.println("Initialize");
+    }
     
     //コンストラクタ（Constructor）
     public Character(String name) {
-        System.out.println("New Character");
         this.name = name;
-        // this.job = job;
-        this.hp = 50;
+        this.level = 1;
+        this.exp = 0;
     }
 
     public Character(String name, String job) {
@@ -15,23 +18,15 @@ public class Character {
         this.job = job;
     }
 
-    //初期化ブロック(Object Initialize Block)
-    {
-        System.out.println("Initialize");
-        this.level = 1;
-    }
-
     // フィールド（プロパティ）
-    // 名前
     public String name;
-    // 職業
     public String job;
-    // 体力
     public int hp;
-    // MP
     public int mp;
-    // Level
     public int level;
+    public int exp;
+    public int attackPower;
+    public int defencePower;
 
     // class method(instnace method)
     // 歩く
