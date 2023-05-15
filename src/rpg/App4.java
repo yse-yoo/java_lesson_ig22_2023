@@ -42,6 +42,10 @@ public class App4 {
             System.out.println(drink);
         }
 
+        System.out.println("---- すべてのデータ削除: clear() ----");
+        drinks.clear();
+        System.out.println(drinks.size());
+
     }
 
 }
