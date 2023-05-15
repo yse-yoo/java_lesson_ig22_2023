@@ -11,6 +11,20 @@ public class AnimalApp {
         cat.cry();
         cat.walk();
         cat.escape();
+
+        Dog dog1 = new Dog("マイケル");
+        Dog dog2 = new Dog("ジョン");
+        Cat cat1 = new Cat("リサ");
+        Cat cat2 = new Cat("ジロー");
+
+        Animal[] animlas = {
+            dog1, dog2, cat1, cat2
+        };        
+
+        for (Animal animal : animlas) {
+            System.out.print(animal.name + ":");
+            animal.cry();
+        }
     }
 
 }
