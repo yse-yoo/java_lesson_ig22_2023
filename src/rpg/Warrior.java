@@ -6,6 +6,7 @@ public class Warrior extends Character {
         super(name);
         this.job = "warrior";
         this.hp = 50;
+        this.mp = 0;
     }
     
 }

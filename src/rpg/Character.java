@@ -23,6 +23,8 @@ public class Character {
     public String job;
     // 体力
     public int hp;
+    // MP
+    public int mp;
     // Level
     public int level;
 

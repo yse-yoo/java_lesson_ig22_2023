@@ -6,6 +6,7 @@ public class Wizard extends Character {
         super(name);
         this.job = "wizard";
         this.hp = 30;
+        this.mp = 20;
     }
     
 }
