@@ -4,7 +4,7 @@ public class Monster {
 
     public Monster(String name) {
         this.name = name;
-        this.hp = 8;
+        this.hp = 10;
         this.mp = 0;
         this.attackPower = 3;
         this.defencePower = 2;
