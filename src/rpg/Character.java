@@ -37,10 +37,10 @@ public class Character {
         message = character.name + "!" + message;
         System.out.println(message);
     }
-    public void attack(Character character) {
-        int damage = this.attackPower - character.defencePower;
+    public void attack(Monster monster) {
+        int damage = this.attackPower - monster.defencePower;
         if (damage > 0) {
-            character.hp -= damage;
+            monster.hp -= damage;
         }
     }
     public void greet(String message) {

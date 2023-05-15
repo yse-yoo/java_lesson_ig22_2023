@@ -13,9 +13,14 @@ public class App3 {
             warrior1 
         };
 
+        Monster monster1 = new Monster("スライム");
+        System.out.println(monster1.name + "があらわれた！");
+
         for (Character character : characters) {
-            System.out.println(character.name);
+            System.out.println(character.name + "のこうげき！");
+            character.attack(monster1);
         }
+        System.out.println(monster1.hp);
     }
 
 }
