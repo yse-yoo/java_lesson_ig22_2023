@@ -10,9 +10,9 @@ public class App2 {
         warrior.walk("right");
         warrior.greet("こんにちは");
 
-        warrior.attack(wizard);
+        // warrior.attack(wizard);
         System.out.println(wizard.hp);
-        wizard.attack(warrior);
+        // wizard.attack(warrior);
         System.out.println(warrior.hp);
     }
 
