@@ -12,6 +12,8 @@ public class App2 {
 
         warrior.attack(wizard);
         System.out.println(wizard.hp);
+        wizard.attack(warrior);
+        System.out.println(warrior.hp);
     }
 
 }

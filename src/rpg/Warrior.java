@@ -14,8 +14,15 @@ public class Warrior extends Character {
     @Override
     public void attack(Character character) {
         System.out.println("Override!!");
+        // attackPower を一時保存（いちじほぞん）
+        int attackPower = this.attackPower;
 
+        // attackPower を2倍にして攻撃（こうげき）
+        this.attackPower *= 2;
         super.attack(character);
+
+        // attackPowerを戻す
+        this.attackPower = attackPower;
     }
 
 }

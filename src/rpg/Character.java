@@ -39,7 +39,9 @@ public class Character {
     }
     public void attack(Character character) {
         int damage = this.attackPower - character.defencePower;
-        character.hp -= damage;
+        if (damage > 0) {
+            character.hp -= damage;
+        }
     }
     public void greet(String message) {
         System.out.println(message);
