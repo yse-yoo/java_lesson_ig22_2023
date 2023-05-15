@@ -18,12 +18,13 @@ public class AnimalApp {
         Cat cat2 = new Cat("ジロー");
 
         Animal[] animlas = {
-            dog1, dog2, cat1, cat2
+            cat1, dog1, dog2, cat2
         };        
 
         for (Animal animal : animlas) {
             System.out.print(animal.name + ":");
             animal.cry();
+            animal.walk();
         }
     }
 
