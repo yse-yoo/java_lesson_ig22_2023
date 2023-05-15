@@ -46,6 +46,19 @@ public class App4 {
         drinks.clear();
         System.out.println(drinks.size());
 
+        // Character型の Collection
+        ArrayList<Character> characters = new ArrayList<>();
+        Wizard wizard1 = new Wizard("アリス");
+        Wizard wizard2 = new Wizard("テリー");
+        Warrior warrior1 = new Warrior("ボブ");
+
+        characters.add(wizard1);
+        characters.add(wizard2);
+        characters.add(warrior1);
+
+        for (Character character : characters) {
+            character.walk("left");
+        }
     }
 
 }
