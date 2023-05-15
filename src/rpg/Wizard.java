@@ -7,7 +7,7 @@ public class Wizard extends Character {
         this.job = "wizard";
         this.hp = 30;
         this.mp = 20;
-        this.attackPower = 3;
+        this.attackPower = 4;
         this.defencePower = 3;
     }
     

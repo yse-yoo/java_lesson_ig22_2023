@@ -8,7 +8,7 @@ public class Warrior extends Character {
         this.hp = 50;
         this.mp = 0;
         this.attackPower = 7;
-        this.defencePower = 5;
+        this.defencePower = 3;
     }
     
     @Override
