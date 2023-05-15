@@ -1,7 +1,11 @@
 package rpg;
 
 public class Monster {
-    
+
+    public Monster(String name) {
+        this.name = name;
+    }
+
     public String name;
     public int hp;
     public int mp;
