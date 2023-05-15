@@ -18,13 +18,13 @@ public class Character {
 
     // フィールド（プロパティ）
     // 名前
-    String name;
+    public String name;
     // 職業
-    String job;
+    public String job;
     // 体力
-    int hp;
+    public int hp;
     // Level
-    int level;
+    public int level;
 
     // class method(instnace method)
     // 歩く
