@@ -3,10 +3,10 @@ package rpg;
 public class Character {
     
     //コンストラクタ（Constructor）
-    public Character(String name, String job) {
+    public Character(String name) {
         System.out.println("New Character");
         this.name = name;
-        this.job = job;
+        // this.job = job;
         this.hp = 50;
     }
 
