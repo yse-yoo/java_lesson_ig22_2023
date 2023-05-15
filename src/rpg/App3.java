@@ -28,11 +28,13 @@ public class App3 {
         Random rand = new Random();
         int characerIndex = rand.nextInt(characters.length);
         if (monster1.hp > 0) {
+            // モンスターのHPがあれば、モンスターの攻撃
             Character character = characters[characerIndex];
             System.out.println(monster1.name + "のこうげき！");
             monster1.attack(character);
             System.out.println(character.name + "にダメージ！");
         } else {
+            // モンスターのHPがなければ、たおした
             System.out.println(monster1.name + "をたおした！");
         }
 
