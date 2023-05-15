@@ -43,6 +43,12 @@ public class Character {
             monster.hp -= damage;
         }
     }
+    public void attack(Character character) {
+        int damage = this.attackPower - character.defencePower;
+        if (damage > 0) {
+            character.hp -= damage;
+        }
+    }
     public void greet(String message) {
         System.out.println(message);
     }
