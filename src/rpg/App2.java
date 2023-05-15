@@ -8,6 +8,8 @@ public class App2 {
 
         Warrior warrior = new Warrior("ボブ");
         warrior.walk("right");
+
+        warrior.greet("こんにちは");
     }
 
 }
