@@ -2,6 +2,10 @@ package zoo;
 
 public class Animal {
     
+    public Animal(String name) {
+        this.name = name;
+    }
+
     String type;
     String name;
     String crying;
