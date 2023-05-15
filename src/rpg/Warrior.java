@@ -11,4 +11,11 @@ public class Warrior extends Character {
         this.defencePower = 5;
     }
     
+    @Override
+    public void attack(Character character) {
+        System.out.println("Override!!");
+
+        super.attack(character);
+    }
+
 }
