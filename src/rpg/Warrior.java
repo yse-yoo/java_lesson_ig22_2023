@@ -14,7 +14,7 @@ public class Warrior extends Character {
     }
     
     @Override
-    public void attack(Character character) {
+    public void attack(Monster monster) {
         System.out.println("Override!!");
         // attackPower を一時保存（いちじほぞん）
         int attackPower = this.attackPower;
@@ -25,7 +25,7 @@ public class Warrior extends Character {
             // attackPower を2倍にして攻撃（こうげき）
             this.attackPower *= 2;
         }
-        super.attack(character);
+        super.attack(monster);
 
         // attackPowerを戻す
         this.attackPower = attackPower;
