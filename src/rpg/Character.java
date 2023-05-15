@@ -10,6 +10,11 @@ public class Character {
         this.hp = 50;
     }
 
+    public Character(String name, String job) {
+        this.name = name;
+        this.job = job;
+    }
+
     //初期化ブロック(Object Initialize Block)
     {
         System.out.println("Initialize");
