@@ -48,6 +48,7 @@ public class App4 {
 
         // Character型の Collection
         ArrayList<Character> characters = new ArrayList<>();
+        // ArrayList<Character> characters = new ArrayList<Character>();
         Wizard wizard1 = new Wizard("アリス");
         Wizard wizard2 = new Wizard("テリー");
         Warrior warrior1 = new Warrior("ボブ");
@@ -59,6 +60,7 @@ public class App4 {
         for (Character character : characters) {
             character.walk("left");
         }
+
     }
 
 }
