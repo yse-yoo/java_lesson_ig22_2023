@@ -1,6 +1,6 @@
 package rpg;
 
-public class Character {
+public class Character extends CharacterAbstract {
     //初期化ブロック(Object Initialize Block)
     {
         System.out.println("Initialize");
@@ -51,6 +51,11 @@ public class Character {
     }
     public void greet(String message) {
         System.out.println(message);
+    }
+
+    @Override
+    public boolean isAlive() {
+        return (this.hp > 0);
     }
 
 }
