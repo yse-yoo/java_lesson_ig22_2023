@@ -46,8 +46,13 @@ public class MapApp {
         String selectFood = foodMap.get("F0002");
         System.out.println(selectFood);
         
+        System.out.println("--- values() ---");
         for (String foodName : foodMap.values()) {
             System.out.println(foodName);
+        }
+        System.out.println("--- keySet() ---");
+        for (String code : foodMap.keySet()) {
+            System.out.println(code);
         }
     }
 
