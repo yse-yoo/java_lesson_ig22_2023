@@ -14,6 +14,10 @@ public class MapApp {
         for (String code : drinkMap.keySet()) {
            System.out.println(code); 
         }
+
+        for (Drink drink : drinkMap.values()) {
+            System.out.println(drink.name);
+        }
     }
 
 }
