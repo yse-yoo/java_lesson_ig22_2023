@@ -14,6 +14,11 @@ public class ListApp {
         for (Drink drink : drinkList) {
             System.out.println(drink.name);
         }
+
+        System.out.println("--- Drink get(1) ---");
+        Drink selectDrink = drinkList.get(1);
+        System.out.println(selectDrink.name);
+
     }
 
 }
