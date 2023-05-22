@@ -6,4 +6,12 @@ public class Item {
     public int defencePower;
     public int price;
 
+    public Item(String name, int attackPower, int defencePower, int price) {
+        this.name = name;
+        this.attackPower = attackPower;
+        this.defencePower = defencePower;
+        this.price = price;
+    }
+
+    
 }
