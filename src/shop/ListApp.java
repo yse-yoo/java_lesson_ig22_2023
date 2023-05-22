@@ -24,6 +24,12 @@ public class ListApp {
         for (Drink drink : drinkList) {
             System.out.println(drink.name);
         }
+
+        System.out.println("--- Drink remove(2) ---");
+        drinkList.remove(2);
+        for (Drink drink : drinkList) {
+            System.out.println(drink.name);
+        }
     }
 
 }
