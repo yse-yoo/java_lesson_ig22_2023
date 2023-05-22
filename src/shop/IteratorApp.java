@@ -22,12 +22,14 @@ public class IteratorApp {
 
         // ListIterator
         ListIterator<Drink> listIterator = drinkList.listIterator();
-        listIterator.add(new Drink("カフェモカ", 350));
-        listIterator.previous();
-
         System.out.println("--- List Iterator ---");
         while (listIterator.hasNext()) {
             Drink drink = listIterator.next();
+            System.out.println(drink.name);
+        }
+        System.out.println("--- reverse ---");
+        while (listIterator.hasPrevious()) {
+            Drink drink = listIterator.previous();
             System.out.println(drink.name);
         }
 
