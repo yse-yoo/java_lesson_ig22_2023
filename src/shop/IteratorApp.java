@@ -12,5 +12,12 @@ public class IteratorApp {
         drinkList.add(new Drink("ほうじ茶", 300, 50));
 
         Iterator<Drink> drinkIterator = drinkList.iterator();
+        // データがあればずっと繰り返す
+        while (drinkIterator.hasNext()) {
+            Drink drink = drinkIterator.next();
+            System.out.println(drink.name);
+        }
+
+
     }
 }
