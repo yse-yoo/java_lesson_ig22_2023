@@ -1,5 +1,7 @@
 package rpg;
 
+import rpg.item.Item;
+
 public class Character implements ICharacter {
     //初期化ブロック(Object Initialize Block)
     {
@@ -66,6 +68,12 @@ public class Character implements ICharacter {
             System.out.println("Magic attack");
             // TODO magic attack method
         }
+    }
+
+    @Override
+    public void equip(Item item) {
+        this.attackPower += item.attackPower;
+        this.defencePower += item.defencePower;
     }
 
 }
