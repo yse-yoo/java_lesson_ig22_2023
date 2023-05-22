@@ -9,7 +9,11 @@ public class MapApp {
         drinkMap.put("D0001", new Drink("コーヒー", 350));
         drinkMap.put("D0002", new Drink("紅茶", 400));
         drinkMap.put("D0003", new Drink("ほうじ茶", 300));
-        
+
+        // keySet(): key List を取得
+        for (String code : drinkMap.keySet()) {
+           System.out.println(code); 
+        }
     }
 
 }
