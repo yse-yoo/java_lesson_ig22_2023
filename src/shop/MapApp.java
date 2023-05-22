@@ -36,6 +36,19 @@ public class MapApp {
         int drinkCount = drinkMap.size();
         System.out.println(drinkCount);
 
+
+        // 演習
+        HashMap<String, String> foodMap = new HashMap<>();
+        foodMap.put("F0001", "Apple");
+        foodMap.put("F0002", "Peach");
+        foodMap.put("F0003", "Grape");
+
+        String selectFood = foodMap.get("F0002");
+        System.out.println(selectFood);
+        
+        for (String foodName : foodMap.values()) {
+            System.out.println(foodName);
+        }
     }
 
 }
