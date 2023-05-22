@@ -1,6 +1,6 @@
 package rpg;
 
-public class Character extends CharacterAbstract {
+public class Character implements ICharacter {
     //初期化ブロック(Object Initialize Block)
     {
         System.out.println("Initialize");
