@@ -12,5 +12,10 @@ public class Drink {
         this.price = price;
         this.stock = stock;
     }
-    
+
+    public Drink(String name, int price) {
+        this.name = name;
+        this.price = price;
+    }
+
 }
