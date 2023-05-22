@@ -8,6 +8,7 @@ public class App {
         User user = new User();
         // user.email = "test@test.com";
         user.setEmail("test@test.com");
+        System.out.println(user.getEmail());
     }
 
 }
