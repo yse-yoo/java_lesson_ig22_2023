@@ -15,9 +15,27 @@ public class MapApp {
            System.out.println(code); 
         }
 
+        // values(): value List を取得
         for (Drink drink : drinkMap.values()) {
             System.out.println(drink.name);
         }
+
+        // get()
+        System.out.println("--- get by key ---");
+        Drink selectDrink = drinkMap.get("D0001");
+        System.out.println(selectDrink.name);
+
+        // remove()
+        System.out.println("--- remove() ---");
+        drinkMap.remove("D0001");
+        for (Drink drink : drinkMap.values()) {
+            System.out.println(drink.name);
+        }
+
+        // size()
+        int drinkCount = drinkMap.size();
+        System.out.println(drinkCount);
+
     }
 
 }
