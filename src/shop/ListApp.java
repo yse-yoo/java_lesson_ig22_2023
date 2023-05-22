@@ -19,6 +19,11 @@ public class ListApp {
         Drink selectDrink = drinkList.get(1);
         System.out.println(selectDrink.name);
 
+        System.out.println("--- Drink set(0) ---");
+        drinkList.set(0, new Drink("アイスコーヒー", 250, 50));
+        for (Drink drink : drinkList) {
+            System.out.println(drink.name);
+        }
     }
 
 }
