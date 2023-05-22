@@ -6,7 +6,7 @@ public class Monster {
         this.name = name;
         this.hp = 10;
         this.mp = 0;
-        this.attackPower = 3;
+        this.attackPower = 100;
         this.defencePower = 2;
     }
 

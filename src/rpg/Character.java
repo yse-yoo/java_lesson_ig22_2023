@@ -37,6 +37,8 @@ public class Character extends CharacterAbstract {
         message = character.name + "!" + message;
         System.out.println(message);
     }
+
+    @Override
     public void attack(Monster monster) {
         int damage = this.attackPower - monster.defencePower;
         if (damage > 0) {
@@ -56,6 +58,14 @@ public class Character extends CharacterAbstract {
     @Override
     public boolean isAlive() {
         return (this.hp > 0);
+    }
+
+    @Override
+    public void magic(Monster monster, String key) {
+        if (this.mp > 0) {
+            System.out.println("Magic attack");
+            // TODO magic attack method
+        }
     }
 
 }
