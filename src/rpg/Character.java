@@ -23,14 +23,14 @@ public class Character implements ICharacter {
     }
 
     // フィールド（プロパティ）
-    public String name;
-    public String job;
-    public int hp;
-    public int mp;
-    public int level;
-    public int exp;
-    public int attackPower;
-    public int defencePower;
+    private String name;
+    private String job;
+    private int hp;
+    private int mp;
+    private int level;
+    private int exp;
+    private int attackPower;
+    private int defencePower;
 
 
     // class method(instnace method)
