@@ -25,6 +25,8 @@ public class Battle implements BattleInterface {
             Random random = new Random();
             int index = random.nextInt(characters.size());
             Character character = characters.get(index);
+
+            System.out.println(monster.name + "のこうげき！");
             monster.attack(character);
             System.out.println(character.getName() + ":" + character.getHp());
         } else {
