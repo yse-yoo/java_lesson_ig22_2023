@@ -1,5 +1,7 @@
 package rpg;
 
+import rpg.item.Item;
+
 public class BattleApp {
     
     public static void main(String[] args) {

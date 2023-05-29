@@ -23,4 +23,7 @@ public class Monster {
         }
     }
 
+    public boolean isAlive() {
+        return (this.hp > 0);
+    }
 }
