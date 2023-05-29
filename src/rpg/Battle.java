@@ -17,14 +17,20 @@ public class Battle implements BattleInterface {
 
         // パーティーでモンスターにこうげき
         for (Character character : characters) {
+            System.out.println(character.getName() + "のこうげき！");
             character.attack(monster);
         }
         // モンスターのこうげき
         if (monster.isAlive()) {
             Random random = new Random();
             int index = random.nextInt(characters.size());
-            monster.attack(characters.get(index));
+            Character character = characters.get(index);
+            monster.attack(character);
+            System.out.println(character.getName() + ":" + character.getHp());
+        } else {
+            System.out.println(monster.name + "をたおした！");
         }
+
     }
 
     @Override

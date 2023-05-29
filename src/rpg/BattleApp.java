@@ -11,6 +11,6 @@ public class BattleApp {
         battle.addCharacter(new Warrior("ボブ"));
         battle.addCharacter(new Warrior("チャーリー"));
         // battle.addCharacter(new Warrior("クリス"));
-
+        battle.start();
     }
 }
