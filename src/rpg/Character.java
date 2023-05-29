@@ -76,8 +76,8 @@ public class Character implements ICharacter {
 
     @Override
     public void equip(Item item) {
-        this.attackPower += item.attackPower;
-        this.defencePower += item.defencePower;
+        this.attackPower += item.getAttackPower();
+        this.defencePower += item.getDefencePower();
     }
 
     // Getters & Setters: Ctrl + . 
