@@ -17,7 +17,7 @@ public class App {
         System.out.println(warrior.hp);
         System.out.println(warrior.level);
 
-        wizard.talk(warrior, "勝負しましょう！");
+        wizard.talk(warrior, "こんにちわ！");
         wizard.attack(warrior);
         System.out.println(warrior.hp);
     }

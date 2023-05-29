@@ -18,6 +18,8 @@ public class Character implements ICharacter {
     public Character(String name, String job) {
         this.name = name;
         this.job = job;
+        this.level = 1;
+        this.exp = 0;
     }
 
     // フィールド（プロパティ）
@@ -35,8 +37,9 @@ public class Character implements ICharacter {
        String message = this.name + " move to " + direction;
        System.out.println(message);
     }
+
     public void talk(Character character, String message) {
-        message = character.name + "!" + message;
+        message = "[" + this.name + "]" + character.name + "!" + message;
         System.out.println(message);
     }
 
