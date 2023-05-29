@@ -36,11 +36,6 @@ public class Battle implements BattleInterface {
     }
 
     @Override
-    public void isWin() {
-
-    }
-
-    @Override
     public void addCharacter(Character character) {
         if (characters.size() < 4) {
             characters.add(character);
