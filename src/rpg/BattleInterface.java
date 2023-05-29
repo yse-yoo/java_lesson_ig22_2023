@@ -4,6 +4,5 @@ public interface BattleInterface {
     
     public void addCharacter(Character character);
     public void start();
-    public void isWin();
 
 }
