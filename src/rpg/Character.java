@@ -32,6 +32,7 @@ public class Character implements ICharacter {
     public int attackPower;
     public int defencePower;
 
+
     // class method(instnace method)
     public void walk(String direction) {
        String message = this.name + " move to " + direction;
@@ -77,6 +78,71 @@ public class Character implements ICharacter {
     public void equip(Item item) {
         this.attackPower += item.attackPower;
         this.defencePower += item.defencePower;
+    }
+
+    // Getters & Setters: Ctrl + . 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getJob() {
+        return job;
+    }
+
+    public void setJob(String job) {
+        this.job = job;
+    }
+
+    public int getHp() {
+        return hp;
+    }
+
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+
+    public int getMp() {
+        return mp;
+    }
+
+    public void setMp(int mp) {
+        this.mp = mp;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    public int getExp() {
+        return exp;
+    }
+
+    public void setExp(int exp) {
+        this.exp = exp;
+    }
+
+    public int getAttackPower() {
+        return attackPower;
+    }
+
+    public void setAttackPower(int attackPower) {
+        this.attackPower = attackPower;
+    }
+
+    public int getDefencePower() {
+        return defencePower;
+    }
+
+    public void setDefencePower(int defencePower) {
+        this.defencePower = defencePower;
     }
 
 }
