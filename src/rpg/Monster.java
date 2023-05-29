@@ -17,9 +17,9 @@ public class Monster {
     public int defencePower;
 
     public void attack(Character character) {
-        int damage = this.attackPower - character.defencePower;
+        int damage = this.attackPower - character.getDefencePower();
         if (damage > 0) {
-            character.hp -= damage;
+            character.setHp(character.getHp() - damage);
         }
     }
 

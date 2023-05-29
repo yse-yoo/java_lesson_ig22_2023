@@ -4,22 +4,22 @@ public class App {
     
     public static void main(String[] args) {
         Character wizard = new Character("アリス", "Wizard");
-        System.out.println(wizard.name);
-        System.out.println(wizard.job);
-        System.out.println(wizard.hp);
-        System.out.println(wizard.level);
+        System.out.println(wizard.getName());
+        System.out.println(wizard.getJob());
+        System.out.println(wizard.getHp());
+        System.out.println(wizard.getLevel());
 
         wizard.walk("left");
 
         Character warrior = new Character("ボブ", "Warrior");
-        System.out.println(warrior.name);
-        System.out.println(warrior.job);
-        System.out.println(warrior.hp);
-        System.out.println(warrior.level);
+        System.out.println(warrior.getName());
+        System.out.println(warrior.getJob());
+        System.out.println(warrior.getHp());
+        System.out.println(warrior.getLevel());
 
         wizard.talk(warrior, "こんにちわ！");
         wizard.attack(warrior);
-        System.out.println(warrior.hp);
+        System.out.println(warrior.getHp());
     }
 
 }

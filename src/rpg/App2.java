@@ -11,9 +11,9 @@ public class App2 {
         warrior.greet("こんにちは");
 
         warrior.attack(wizard);
-        System.out.println(wizard.hp);
+        System.out.println(wizard.getHp());
         wizard.attack(warrior);
-        System.out.println(warrior.hp);
+        System.out.println(warrior.getHp());
     }
 
 }

@@ -20,7 +20,7 @@ public class App3 {
 
         // キャラクターの攻撃
         for (Character character : characters) {
-            System.out.println(character.name + "のこうげき！");
+            System.out.println(character.getName() + "のこうげき！");
             character.attack(monster1);
         }
 
@@ -34,11 +34,11 @@ public class App3 {
             System.out.println(monster1.name + "のこうげき！");
 
             monster1.attack(character);
-            System.out.println(character.name + "にダメージ！");
+            System.out.println(character.getName() + "にダメージ！");
             if (character.isAlive()) {
-                System.out.println(character.name + "はいきている");
+                System.out.println(character.getName() + "はいきている");
             } else {
-                System.out.println(character.name + "はたおれた！");
+                System.out.println(character.getName() + "はたおれた！");
             }
         } else {
             // モンスターのHPがなければ、たおした
