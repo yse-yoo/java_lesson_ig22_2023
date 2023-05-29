@@ -8,6 +8,7 @@ public class User {
     private String email;
     private String name;
     private String password;
+    private boolean isActive;
 
     // Ctrl + . => Generate Getters and Setters
     public String getEmail() {

@@ -6,6 +6,7 @@ public class Lesson4 {
 
     public static void main(String[] args) {
 
+        // Array(immutable)
         String[] items = { "PC", "TV", "エアコン" };
         // fori
         for (int i = 0; i < items.length; i++) {

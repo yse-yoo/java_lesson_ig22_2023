@@ -5,6 +5,12 @@ import java.util.ArrayList;
 public class ListApp {
     
     public static void main(String[] args) {
+        ArrayList<String> items = new ArrayList<>();
+        items.add("PC");
+        items.add("TV");
+        items.add("エアコン");
+
+        // Collection: ArrayList(mutable)
         ArrayList<Drink> drinkList = new ArrayList<>();
         drinkList.add(new Drink("コーヒー", 350, 100));
         drinkList.add(new Drink("紅茶", 400, 10));

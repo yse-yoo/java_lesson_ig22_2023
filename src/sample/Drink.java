@@ -7,8 +7,11 @@ import java.util.Random;
 public class Drink {
 
     public static void main(String[] args) {
-        // Array
+        // Array : イミュータブル（immutable）
         String[] drinks = { "コーヒー", "紅茶", "ほうじ茶" };
+        // 追加・削除できない
+        //drinks.add("ウーロン茶");
+        //drinks.remove(0);
         // Python, JavaScript, PHP
         // drinks = ["コーヒー", "紅茶", "ほうじ茶"]
 

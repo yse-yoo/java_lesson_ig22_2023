@@ -12,7 +12,8 @@ public class ItemCalculate {
         int total_price = price * amount;
 
         // camel
-        int totalPrice = price * amount;
+        // int totalPrice = price * amount;
+        Integer totalPrice = price * amount;
 
         System.out.println(name);
         System.out.println(total_price);
@@ -24,6 +25,7 @@ public class ItemCalculate {
 
         // 消費税（comsuption tax）
         // final float TAX_RATE = 0.1f;
+        //定数 constrant
         final Float TAX_RATE = 0.1f;
         // TAX_RATE = 0.8f;
 
@@ -48,6 +50,7 @@ public class ItemCalculate {
 
         // (2) 複合演算
         amount = 3;
+        // amount = amount + 1;
         amount += 1;
         System.out.println(amount);
 
