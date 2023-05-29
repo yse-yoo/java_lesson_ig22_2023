@@ -47,6 +47,7 @@ public class Character implements ICharacter {
             monster.hp -= damage;
         }
     }
+
     public void attack(Character character) {
         int damage = this.attackPower - character.defencePower;
         if (damage > 0) {
@@ -66,7 +67,6 @@ public class Character implements ICharacter {
     public void magic(Monster monster, String key) {
         if (this.mp > 0) {
             System.out.println("Magic attack");
-            // TODO magic attack method
         }
     }
 
