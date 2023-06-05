@@ -15,7 +15,7 @@ public class ItemList {
 
     // Constructor
     public ItemList() {
-
+        this.loadCsv();
     }
 
     // load item.csv & convert java data
@@ -26,6 +26,7 @@ public class ItemList {
 
         try {
             file = new FileInputStream(CSV_PATH);
+            System.out.println("CSV読み込み");
         } catch (FileNotFoundException e) {
             System.out.println("ファイルロードエラー");
         }
