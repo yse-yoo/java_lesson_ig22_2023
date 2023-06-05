@@ -22,6 +22,17 @@ public class Character implements ICharacter {
         this.exp = 0;
     }
 
+    
+
+    public Character(String name, int attackPower, int defencePower) {
+        this.name = name;
+        this.attackPower = attackPower;
+        this.defencePower = defencePower;
+        this.hp = 50;
+    }
+
+
+
     // フィールド（プロパティ）
     private String name;
     private String job;
