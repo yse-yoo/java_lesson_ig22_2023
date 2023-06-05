@@ -9,5 +9,19 @@ public class SizeApp {
         System.out.println(coffee1.size);
         System.out.println(coffee2.size);
         System.out.println(coffee3.size);
+
+        System.out.println(coffee1.size.getValue());
+        System.out.println(coffee2.size.getValue());
+        System.out.println(coffee3.size.getValue());
+
+        System.out.println("--- valueOf() ---");
+        String sizeString = "medium";
+        //MEDIUM
+        System.out.println(Size.valueOf(sizeString.toUpperCase()));
+
+        System.out.println("--- values() ---");
+        for (Size size : Size.values()) {
+            System.out.println(size);
+        }
     }
 }
