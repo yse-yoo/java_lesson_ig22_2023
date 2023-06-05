@@ -5,12 +5,22 @@ public class Item {
     private int attackPower;
     private int defencePower;
     private int price;
+    private ItemType type;
 
+    //Constructor
     public Item(String name, int attackPower, int defencePower, int price) {
         this.name = name;
         this.attackPower = attackPower;
         this.defencePower = defencePower;
         this.price = price;
+    }
+
+    public Item(String name, int attackPower, int defencePower, int price, ItemType type) {
+        this.name = name;
+        this.attackPower = attackPower;
+        this.defencePower = defencePower;
+        this.price = price;
+        this.type = type;
     }
 
     public String getName() {
@@ -45,6 +55,12 @@ public class Item {
         this.price = price;
     }
 
+    public ItemType getType() {
+        return type;
+    }
 
+    public void setType(ItemType type) {
+        this.type = type;
+    }
     
 }

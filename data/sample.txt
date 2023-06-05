@@ -2,3 +2,4 @@ Hello
 YSE
 Yokohama
 Bye
+こんにちは
