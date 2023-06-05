@@ -26,6 +26,14 @@ public class ItemList {
 
         try {
             file = new FileInputStream(CSV_PATH);
+            reader = new InputStreamReader(file, "UTF-8");
+            buffer = new BufferedReader(reader);
+
+            String line;
+            while ((line = buffer.readLine()) != null) {
+                
+            }
+
             System.out.println("CSV読み込み");
         } catch (FileNotFoundException e) {
             System.out.println("ファイルロードエラー");
