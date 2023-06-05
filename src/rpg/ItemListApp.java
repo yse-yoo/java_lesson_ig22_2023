@@ -11,6 +11,10 @@ public class ItemListApp {
         for (Item item : itemList.list) {
             System.out.println(item.getName());
         }
+
+        // 
+        System.out.println("---- index = 3 ----");
+        System.out.println(itemList.list.get(3).getName());
     }
 
 }
