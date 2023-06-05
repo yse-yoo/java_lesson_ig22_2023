@@ -1,7 +1,6 @@
 package sample;
 
 import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -18,6 +17,8 @@ public class FileLoadApp {
             System.out.println("ファイルがみつかりませんでした");
         } catch (IOException e) {
             System.out.println("ファイルエラー");
+        } finally {
+            System.out.println("処理が終了しました");
         }
     }
 
@@ -39,6 +40,8 @@ public class FileLoadApp {
             System.out.println("ファイルがみつかりませんでした");
         } catch (IOException e) {
             System.out.println("データエラー");
+        } finally {
+            System.out.println("処理が終了しました");
         }
     }
 
