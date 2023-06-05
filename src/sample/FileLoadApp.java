@@ -14,7 +14,9 @@ public class FileLoadApp {
 
         try {
             loadFile2(filePath);
-        } catch (Exception e) {
+        } catch (FileNotFoundException e) {
+            System.out.println("ファイルがみつかりませんでした");
+        } catch (IOException e) {
             System.out.println("ファイルエラー");
         }
     }
@@ -40,7 +42,7 @@ public class FileLoadApp {
         }
     }
 
-    public static void loadFile2(String path) throws Exception {
+    public static void loadFile2(String path) throws IOException, FileNotFoundException {
         FileReader reader = new FileReader(path);
         BufferedReader buffer = new BufferedReader(reader);
 
