@@ -15,6 +15,9 @@ public class ItemListApp {
         // 
         System.out.println("---- index = 3 ----");
         System.out.println(itemList.list.get(3).getName());
+
+        System.out.println("---- index = 0 ----");
+        System.out.println(itemList.list.get(0).getType());
     }
 
 }
