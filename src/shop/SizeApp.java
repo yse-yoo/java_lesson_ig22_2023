@@ -6,5 +6,8 @@ public class SizeApp {
         Drink coffee2 = new Drink("コーヒー", 350, Size.MEDIUM);
         Drink coffee3 = new Drink("コーヒー", 400, Size.LARGE);
 
+        System.out.println(coffee1.size);
+        System.out.println(coffee2.size);
+        System.out.println(coffee3.size);
     }
 }
