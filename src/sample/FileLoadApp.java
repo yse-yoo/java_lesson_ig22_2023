@@ -15,6 +15,13 @@ public class FileLoadApp {
         try {
             FileReader reader = new FileReader(path);
             BufferedReader buffer = new BufferedReader(reader);
+
+            String line;
+            //nullになるまで、1行ずつ読み込む
+            while ((line = buffer.readLine()) != null) {
+                System.out.println(line);
+            }
+
             System.out.println("ファイルを読み込みました");
         } catch (FileNotFoundException e) {
             System.out.println("ファイルがみつかりませんでした");
