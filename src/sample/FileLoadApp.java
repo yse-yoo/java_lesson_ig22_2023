@@ -5,13 +5,18 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class FileLoadApp {
 
     public static void main(String[] args) {
         String filePath = "./data/sample.txt";
         loadFile(filePath);
+
+        try {
+            loadFile2(filePath);
+        } catch (Exception e) {
+            System.out.println("ファイルエラー");
+        }
     }
 
     public static void loadFile(String path) {
@@ -20,7 +25,7 @@ public class FileLoadApp {
             BufferedReader buffer = new BufferedReader(reader);
 
             String line;
-            //nullになるまで、1行ずつ読み込む
+            // nullになるまで、1行ずつ読み込む
             while ((line = buffer.readLine()) != null) {
                 System.out.println(line);
             }
@@ -33,5 +38,19 @@ public class FileLoadApp {
         } catch (IOException e) {
             System.out.println("データエラー");
         }
+    }
+
+    public static void loadFile2(String path) throws Exception {
+        FileReader reader = new FileReader(path);
+        BufferedReader buffer = new BufferedReader(reader);
+
+        String line;
+        // nullになるまで、1行ずつ読み込む
+        while ((line = buffer.readLine()) != null) {
+            System.out.println(line);
+        }
+        System.out.println("ファイルを読み込みました");
+        // バッファーをとじる
+        buffer.close();
     }
 }
