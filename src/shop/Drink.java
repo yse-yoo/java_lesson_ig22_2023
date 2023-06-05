@@ -5,6 +5,7 @@ public class Drink {
     public String name;
     public int price;
     public int stock;
+    public Size size;
 
     // constructor
     public Drink(String name, int price, int stock) {
