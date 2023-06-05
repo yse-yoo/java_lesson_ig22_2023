@@ -1,6 +1,9 @@
 package rpg.item;
 
 public class Item {
+
+    private long id;
+
     private String name;
     private int attackPower;
     private int defencePower;
@@ -8,6 +11,16 @@ public class Item {
     private ItemType type;
 
     //Constructor
+    public Item(long id, String name, int attackPower, int defencePower, int price, ItemType type) {
+        this.id = id;
+        this.name = name;
+        this.attackPower = attackPower;
+        this.defencePower = defencePower;
+        this.price = price;
+        this.type = type;
+    }
+
+
     public Item(String name, int attackPower, int defencePower, int price) {
         this.name = name;
         this.attackPower = attackPower;
@@ -21,6 +34,14 @@ public class Item {
         this.defencePower = defencePower;
         this.price = price;
         this.type = type;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getName() {

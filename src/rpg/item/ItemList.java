@@ -39,13 +39,14 @@ public class ItemList {
                 // , でくぎって、配列にする
                 String[] data = line.split(",");
 
+                long id = Long.parseLong(data[0]);
                 String name = data[1];
                 ItemType itemType = ItemType.valueOf(data[2].toUpperCase());
                 int price = Integer.parseInt(data[3]);
                 int attackPower = Integer.parseInt(data[4]);
                 int defencePower = Integer.parseInt(data[5]);
 
-                Item item = new Item(name, attackPower, defencePower, price, itemType);
+                Item item = new Item(id, name, attackPower, defencePower, price, itemType);
                 list.add(item);
             }
             System.out.println("CSV読み込み");
