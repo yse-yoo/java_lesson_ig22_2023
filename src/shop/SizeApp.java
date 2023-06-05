@@ -1,0 +1,10 @@
+package shop;
+
+public class SizeApp {
+    public static void main(String[] args) {
+        Drink coffee1 = new Drink("コーヒー", 300, Size.SMALL);
+        Drink coffee2 = new Drink("コーヒー", 350, Size.MEDIUM);
+        Drink coffee3 = new Drink("コーヒー", 400, Size.LARGE);
+
+    }
+}

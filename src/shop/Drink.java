@@ -19,4 +19,10 @@ public class Drink {
         this.price = price;
     }
 
+    public Drink(String name, int price, Size size) {
+        this.name = name;
+        this.price = price;
+        this.size = size;
+    }
+    
 }
