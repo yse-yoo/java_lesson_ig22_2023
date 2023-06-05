@@ -52,6 +52,8 @@ public class ItemList {
             System.out.println("CSV読み込み");
         } catch (FileNotFoundException e) {
             System.out.println("ファイルロードエラー");
+        } catch (NumberFormatException e) {
+            System.out.println("データが数値ではありません");
         } catch (IOException e) {
             System.out.println("データエラー");
         }
