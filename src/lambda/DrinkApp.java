@@ -13,6 +13,11 @@ public class DrinkApp {
         for (Drink drink : drinks) {
             System.out.println(drink.name);
         }
+
+        //ラムダ式
+        drinks.forEach(drink -> {
+            System.out.println(drink.name);
+        });
     }
 
 }
