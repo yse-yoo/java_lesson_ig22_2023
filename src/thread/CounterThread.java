@@ -17,6 +17,8 @@ public class CounterThread implements Runnable {
                 e.printStackTrace();
             }
         }
+        count = 5;
+        System.out.println("--- thread end. ---");
     }
 
 }
