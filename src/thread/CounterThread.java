@@ -7,7 +7,7 @@ public class CounterThread implements Runnable {
 
     @Override
     public void run() {
-        while (count >= 0) {
+        while (count > 0) {
             try {
                 Thread.sleep(interval);
                 String message = Thread.currentThread().getName() + ":" + count;
