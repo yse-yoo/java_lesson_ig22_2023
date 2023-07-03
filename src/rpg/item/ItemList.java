@@ -26,8 +26,11 @@ public class ItemList {
         BufferedReader buffer;
 
         try {
+            //ファイルを開く
             file = new FileInputStream(CSV_PATH);
             reader = new InputStreamReader(file, "UTF-8");
+
+            //データを読み込む
             buffer = new BufferedReader(reader);
 
             // 最初の1行を読み込む

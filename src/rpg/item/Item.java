@@ -3,7 +3,6 @@ package rpg.item;
 public class Item {
 
     private long id;
-
     private String name;
     private int attackPower;
     private int defencePower;
