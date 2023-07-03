@@ -8,17 +8,20 @@ public class TimerApp {
     public static void main(String[] args) {
         System.out.println(seconds + "秒後に実行されます。");
 
+        Timer timer = new Timer();
         TimerTask task = new TimerTask() {
             @Override
             public void run() {
                 System.out.println("実行しました！");
+                //タイマー終了
+                timer.cancel();
             }
         };
 
         //micro seconds に変換
         int ms = seconds * 1000;
 
-        Timer timer = new Timer();
+        // 実行
         timer.schedule(task, ms);
     }
 
