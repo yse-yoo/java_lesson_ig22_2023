@@ -14,8 +14,11 @@ public class DateTimerApp {
 
     public static void main(String[] args) throws ParseException {
         Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.YEAR, 2023);
+        calendar.set(Calendar.MONTH, 6);
+        calendar.set(Calendar.DATE, 3);
         calendar.set(Calendar.HOUR_OF_DAY, 12);
-        calendar.set(Calendar.MINUTE, 11);
+        calendar.set(Calendar.MINUTE, 14);
         calendar.set(Calendar.SECOND, 0);
 
         Date scheduledTime = calendar.getTime();
