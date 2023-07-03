@@ -7,5 +7,8 @@ public class ShopThread extends Thread {
     ShopThread(Item item) {
         this.item = item;
     }
-    
+
+    public void run() {
+        item.order();
+    }
 }
