@@ -8,9 +8,14 @@ public class CounterThread implements Runnable {
     @Override
     public void run() {
         while (count >= 0) {
-            String message = Thread.currentThread().getName() + ":" + count;
-            System.out.println(message);
-            count--;
+            try {
+                Thread.sleep(interval);
+                String message = Thread.currentThread().getName() + ":" + count;
+                System.out.println(message);
+                count--;
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 
