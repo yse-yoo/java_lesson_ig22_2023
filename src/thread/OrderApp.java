@@ -15,6 +15,7 @@ public class OrderApp {
             //start() を実行すると、　Thread.run()が実行
 
             try {
+                //スレッド待機（たいき）
                 thread.join();
             } catch (InterruptedException e) {
                 e.printStackTrace();
