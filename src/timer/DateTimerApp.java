@@ -2,6 +2,7 @@ package timer;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -12,18 +13,22 @@ public class DateTimerApp {
     public static long maxCount = 5;
 
     public static void main(String[] args) throws ParseException {
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.HOUR_OF_DAY, 12);
+        calendar.set(Calendar.MINUTE, 11);
+        calendar.set(Calendar.SECOND, 0);
+
+        Date scheduledTime = calendar.getTime();
+
         Timer timer = new Timer();
         TimerTask task = new TimerTask() {
             @Override
             public void run() {
-                System.out.println(count);
+                System.out.println("タイマーが実行されました。");
+                timer.cancel();
             }
         };
-
-        // 時間指定
-        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
-        Date date = sdf.parse("11:55:00");
-        timer.schedule(task, date, interval * 1000);
+        timer.schedule(task, scheduledTime);
     }
 
 }
