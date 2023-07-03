@@ -1,7 +1,5 @@
 package timer;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Timer;
@@ -12,7 +10,7 @@ public class DateTimerApp {
     public static long count = 0;
     public static long maxCount = 5;
 
-    public static void main(String[] args) throws ParseException {
+    public static void main(String[] args) {
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.YEAR, 2023);
         calendar.set(Calendar.MONTH, 6);
