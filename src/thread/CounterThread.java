@@ -7,18 +7,20 @@ public class CounterThread implements Runnable {
 
     @Override
     public void run() {
-        while (count > 0) {
-            try {
-                Thread.sleep(interval);
-                String message = Thread.currentThread().getName() + ":" + count;
-                System.out.println(message);
-                count--;
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+        synchronized (count) {
+            while (count > 0) {
+                try {
+                    Thread.sleep(interval);
+                    String message = Thread.currentThread().getName() + ":" + count;
+                    System.out.println(message);
+                    count--;
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
+            count = 5;
+            System.out.println("--- thread end. ---");
         }
-        count = 5;
-        System.out.println("--- thread end. ---");
     }
 
 }
