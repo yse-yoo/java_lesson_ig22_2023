@@ -12,6 +12,13 @@ public class OrderApp {
         for (Item item : items) {
             ShopThread thread = new ShopThread(item);
             thread.start();
+            //start() を実行すると、　Thread.run()が実行
+
+            try {
+                thread.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
