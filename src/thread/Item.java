@@ -7,4 +7,14 @@ public class Item {
         this.name = name;
     }
     
+    public void order() {
+        try {
+            System.out.println(name);
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("-- Order is completed.--");
+    }
+
 }
