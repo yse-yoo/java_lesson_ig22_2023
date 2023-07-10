@@ -18,10 +18,17 @@ public class CityList {
         while (place <= PLACE_MAX) {
             int next = 0;
             for (int digit = 9; digit >= 0; digit--) {
+                // target: cities の index
+                // next: cities の index
                 for (int target = 0; target < length; target++) {
-
+                    if (getDigit(target, place) == digit) {
+                        move(target, next);
+                        next++;
+                    }
                 }
             }
+            // 位を10倍する　問題の10の説明
+            place *= BASE;
         }
     }
 
