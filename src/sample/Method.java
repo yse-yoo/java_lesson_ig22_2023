@@ -45,6 +45,11 @@ public class Method {
         return (int) totalPrice;
     }
 
+    public static int claculateTotalPrice(int price, int amount, float taxRate, Boolean isSale) {
+        float totalPrice = price * amount * (1 + taxRate);
+        return (int) totalPrice;
+    }
+
 
     public static void greet(String name) {
        String message = name + "さん、こんにちは！"; 
