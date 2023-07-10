@@ -1,6 +1,6 @@
-package exam;
+package exam.q1;
 
-import exam.item.Product;
+import exam.q1.item.Product;
 
 public class Question5 {
     

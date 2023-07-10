@@ -1,4 +1,4 @@
-package exam;
+package exam.q1;
 
 public class Dog extends Animal {
 
