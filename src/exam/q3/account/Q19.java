@@ -6,7 +6,7 @@ public class Q19 {
         this.amount = amount;
     }
 
-    int getAmount() {
+    public int getAmount() {
         return amount;
     }
 }
