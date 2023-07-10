@@ -6,7 +6,7 @@ public class CounterThread implements Runnable {
     public long interval = 1000;
 
     @Override
-    synchronized public void run() {
+    public void run() {
         // synchronized (count) {
         while (count > 0) {
             try {
