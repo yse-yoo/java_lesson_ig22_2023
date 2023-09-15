@@ -7,7 +7,7 @@ public class CityList {
 
     CityList(City[] cityData) {
         cities = new City[cityData.length];
-        for (int dist = 0; dist < cityData.length; dist++) {
+        for (int dist = 1; dist < cityData.length; dist++) {
             cities[dist] = cityData[dist];
         }
     }

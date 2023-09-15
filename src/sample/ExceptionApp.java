@@ -12,11 +12,12 @@ public class ExceptionApp {
     }
 
     public static float calculateAverage(int score, int count) {
-        if (count > 0) {
-            return (float) score / count;
-        } else {
+        float average = 0;
+        try {
+            average = score / count;
+        } catch (Exception e) {
             System.err.println("countが間違っています。");
-            return 0;
         }
+        return average;
     }
 }
